@@ -38,7 +38,7 @@ module mint_nft::minting {
         // create the nft collection
         let collection = string::utf8(COLLECTION_NAME);
         let description = string::utf8(b"this is for our first move workshop!!");
-        let collection_uri = string::utf8(b"https://qqjihi7xzuve6fxn6s5lkltyyvr3oqmi7z7xsnbgasqbwajydx6a.arweave.net/hBKDo_fNKk8W7fS6tS54xWO3QYj-f3k0JgSgGwE4Hfw");
+        let collection_uri = string::utf8(b"N/A");
         let maximum_supply = 0;
         let mutate_setting = vector<bool>[ false, false, false ];
         token::create_collection(&resource_signer, collection, description, collection_uri, maximum_supply, mutate_setting);
@@ -83,7 +83,7 @@ module mint_nft::minting {
             token_name,
             string::utf8(b"Penguins for Our First Move Workshop!"),
             0,
-            string::utf8(b"https://7ju7rixqsllrusab4hsx5pyvc2tlrxsmft3chaxbs2kydqikg2da.arweave.net/-mn4ovCS1xpIAeHlfr8VFqa43kws9iOC4ZaVgcEKNoY"),
+            string::utf8(b"https://slwdaeeko5tz5hx46c6zwqhmh3c6je4sbdbjsdjzbntme5dxarxa.arweave.net/kuwwEIp3Z56e_PC9m0DsPsXkk5IIwpkNOQtmwnR3BG4"),
             @mint_nft,
             1,
             0,
