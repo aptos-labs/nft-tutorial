@@ -6,7 +6,7 @@ Because Aptos toolings and Move toolings are slightly different, we made some sm
 Welcome to the Move Tutorial! In this tutorial, we are going to go through some steps of developing Move code
 including design, implementation, unit testing and formal verification of Move modules. 
 
-There are nine steps in total:
+There are seven steps in total:
 
 - [Step 0: Installation](#Step0)
 - [Step 1: Writing my first Move module](#Step1)
