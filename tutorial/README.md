@@ -140,15 +140,7 @@ aptos move compile --package-dir step_1/BasicCoin
 <details>
 <summary>Advanced concepts and references</summary>
 
-* You can create an empty Move package by calling:
-    ```bash
-    move new <pkg_name>
-    ```
-* Move code can also live a number of other places.  More information on the
-  Move package system can be found in the [Move
-  book](https://move-language.github.io/move/packages.html)
-* More information on the `Move.toml` file can be found in the [package section of the Move book](https://move-language.github.io/move/packages.html#movetoml).
-* Move also supports the idea of [named
+* Move supports the idea of [named
   addresses](https://move-language.github.io/move/address.html#named-addresses), Named
   addresses are a way to parametrize Move source code so that you can compile
   the module using different values for `NamedAddr` to get different bytecode
@@ -227,18 +219,6 @@ assertion fails the unit test will fail.
   can be found
   [here](https://github.com/move-language/move/blob/main/language/changes/4-unit-testing.md#testing-annotations-their-meaning-and-usage).
   You'll see some of these used in Step 5.
-* Before running unit tests, you'll always need to add a dependency on the Move
-  standard library. This can be done by adding an entry to the `[dependencies]`
-  section of the `Move.toml`, e.g.,
-
-  ```toml
-  [dependencies]
-  MoveStdlib = { local = "../../../../move-stdlib/", addr_subst = { "std" = "0x1" } }
-  ```
-
-  Note that you may need to alter the path to point to the `move-stdlib` directory under
-  `<path_to_move>/language`. You can also specify git dependencies. You can read more on Move
-  package dependencies [here](https://move-language.github.io/move/packages.html#movetoml).
 
 
 </details>
