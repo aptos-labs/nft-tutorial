@@ -15,8 +15,6 @@ There are nine steps in total:
 - [Step 4: Implementing my `BasicCoin` module](#Step4)
 - [Step 5: Adding and using unit tests with the `BasicCoin` module](#Step5)
 - [Step 6: Making my `BasicCoin` module generic](#Step6)
-- [Step 7: Use the Move prover](#Step7)
-- [Step 8: Writing formal specifications for the `BasicCoin` module](#Step8)
 
 Each step is designed to be self-contained in the corresponding `step_x` folder. For example, if you would
 like to skip the contents in step 1 through 4, feel free to jump to step 5 since all the code we have written
