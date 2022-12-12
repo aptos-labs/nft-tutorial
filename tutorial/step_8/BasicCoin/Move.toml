@@ -5,5 +5,7 @@ version = "0.0.0"
 [addresses]
 NamedAddr = "0xCAFE"
 
-[dependencies]
-MoveStdlib = { local = "../../../../move-stdlib/", addr_subst = { "std" = "0x1" } }
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'testnet'
+subdir = 'aptos-move/framework/aptos-framework'
