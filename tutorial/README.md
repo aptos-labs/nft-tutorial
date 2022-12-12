@@ -169,15 +169,17 @@ module 0xCAFE::BasicCoin {
         // Make sure there is a `Coin` resource under `addr` with a value of `10`.
         // We can access this resource and its value since we are in the
         // same module that defined the `Coin` resource.
-        assert!(borrow_global<Coin>(addr).value == 10, 0);
+        assert!(borrow_global<Coin>(addr).value == 11, 0);
     }
 }
 ```
 
 This is declaring a unit test called `test_mint_10` that mints a `Coin` struct
-under the `account` with a `value` of `10`. It is then checking that the minted
+under the `account` with a `value` of `11`. It is then checking that the minted
 coin in storage has the value that is expected with the `assert!` call. If the
 assertion fails the unit test will fail.
+This test is expected to fail - by changing line 24 to assert!(borrow_global<Coin>(addr).value == 10, 0),
+the test will pass. 
 
 <details>
 <summary>Advanced concepts and exercises</summary>
