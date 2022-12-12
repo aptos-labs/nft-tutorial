@@ -139,16 +139,7 @@ aptos move compile --package-dir step_1/BasicCoin
 
 <details>
 <summary>Advanced concepts and references</summary>
-
-* You can create an empty Move package by calling:
-    ```bash
-    move new <pkg_name>
-    ```
-* Move code can also live a number of other places.  More information on the
-  Move package system can be found in the [Move
-  book](https://move-language.github.io/move/packages.html)
-* More information on the `Move.toml` file can be found in the [package section of the Move book](https://move-language.github.io/move/packages.html#movetoml).
-* Move also supports the idea of [named
+* Move supports the idea of [named
   addresses](https://move-language.github.io/move/address.html#named-addresses), Named
   addresses are a way to parametrize Move source code so that you can compile
   the module using different values for `NamedAddr` to get different bytecode
@@ -232,15 +223,12 @@ assertion fails the unit test will fail.
   section of the `Move.toml`, e.g.,
 
   ```toml
-  [dependencies]
-  MoveStdlib = { local = "../../../../move-stdlib/", addr_subst = { "std" = "0x1" } }
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'testnet'
+subdir = 'aptos-move/framework/aptos-framework'
   ```
-
-  Note that you may need to alter the path to point to the `move-stdlib` directory under
-  `<path_to_move>/language`. You can also specify git dependencies. You can read more on Move
-  package dependencies [here](https://move-language.github.io/move/packages.html#movetoml).
-
-
+  
 </details>
 
 ## Step 3: Designing my `BasicCoin` module<span id="Step3"><span>
@@ -299,7 +287,7 @@ Roughly the Move blockchain state should look like this:
 <details>
 <summary><code>public(script)</code> functions</summary>
 
-Only functions with `public(script)` visibility can be invoked directly in transactions. So if you would like to call the `transfer`
+Only functions with `public(script)` / `public entry` visibility can be invoked directly in transactions. So if you would like to call the `transfer`
 method directly from a transaction, you'll want to change its signature to:
 ```
 public(script) fun transfer(from: signer, to: address, amount: u64) acquires Balance { ... }
@@ -420,7 +408,7 @@ take a look at some tools we can use to help us write tests.
 To get started, run the `package test` command in the [`step_5/BasicCoin`](./step_5/BasicCoin) folder
 
 ```bash
-aptos move test --package-dir step_5c/BasicCoin
+aptos move test --package-dir step_5/BasicCoin
 ```
 
 You should see something like this:
