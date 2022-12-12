@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/step_1/BasicCoin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/step_2/BasicCoin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/step_4/BasicCoin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/step_5/BasicCoin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/step_6/BasicCoin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/step_7/BasicCoin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/step_8/BasicCoin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/step_2_sol/BasicCoin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/step_4_sol/BasicCoin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/step_5_sol/BasicCoin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/step_8_sol/BasicCoin/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
