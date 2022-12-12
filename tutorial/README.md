@@ -32,20 +32,6 @@ If you haven't already, install the Aptos CLI and Move Prover:
 - How to install Aptos CLI: https://aptos.dev/cli-tools/aptos-cli-tool/install-aptos-cli
 - How to install Move Prover: https://aptos.dev/cli-tools/install-move-prover
 
-```
-move-cli 0.1.0
-Diem Association <opensource@diem.com>
-MoveCLI is the CLI that will be executed by the `move-cli` command The `cmd` argument is added here
-rather than in `Move` to make it easier for other crates to extend `move-cli`
-
-USAGE:
-    move [OPTIONS] <SUBCOMMAND>
-
-OPTIONS:
-        --abi                          Generate ABIs for packages
-...
-```
-
 If you want to find what commands are available and what they do, running
 a command or subcommand with the `--help` flag will print documentation.
 
@@ -53,22 +39,6 @@ Before running the next steps, `cd` to the tutorial directory:
 ```bash
 cd tutorial
 ```
-
-
-<details>
-<summary>Visual Studio Code Move support</summary>
-There is official Move support for Visual Studio Code. You need to install
-the move analyzer first:
-
-```bash
-cargo install --path language/move-analyzer
-```
-
-Now you can install the VS extension by opening VS Code, searching for the "move-analyzer" in
-the Extension Pane, and installing it. More detailed instructions can be found
-in the extension's [README](https://github.com/move-language/move/tree/main/language/move-analyzer/editors/code).
-</details>
-
 
 ## Step 1: Writing my first Move module<span id="Step1"><span>
 
