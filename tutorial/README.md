@@ -1,6 +1,6 @@
 # Credits
-This tutorial is forked an existing tutorial from the Move repo (https://github.com/move-language/move/tree/main/language/documentation/tutorial), 
-we made some small modifications that change all Move commands to Aptos Move commands. 
+This tutorial is forked from an existing tutorial from the Move repo (https://github.com/move-language/move/tree/main/language/documentation/tutorial).
+Because Aptos toolings and Move toolings are slightly different, we made some small modifications that changed all Move commands to Aptos Move commands. 
 
 # Move Tutorial
 Welcome to the Move Tutorial! In this tutorial, we are going to go through some steps of developing Move code
