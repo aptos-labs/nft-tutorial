@@ -1,9 +1,10 @@
-# Move Tutorial
-
-Welcome to the Move Tutorial! In this tutorial, we are going to go through some steps of developing Move code
-including design, implementation, unit testing and formal verification of Move modules. This tutorial is forked an
-existing tutorial from the Move repo (https://github.com/move-language/move/tree/main/language/documentation/tutorial), 
+# Credits
+This tutorial is forked an existing tutorial from the Move repo (https://github.com/move-language/move/tree/main/language/documentation/tutorial), 
 we made some small modifications that change all Move commands to Aptos Move commands. 
+
+# Move Tutorial
+Welcome to the Move Tutorial! In this tutorial, we are going to go through some steps of developing Move code
+including design, implementation, unit testing and formal verification of Move modules. 
 
 There are nine steps in total:
 
