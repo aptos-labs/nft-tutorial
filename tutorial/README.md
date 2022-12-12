@@ -369,7 +369,7 @@ take a look at some tools we can use to help us write tests.
 To get started, run the `package test` command in the [`step_5/BasicCoin`](./step_5/BasicCoin) folder
 
 ```bash
-aptos move test --package-dir step_5c/BasicCoin
+aptos move test --package-dir step_5/BasicCoin
 ```
 
 You should see something like this:
