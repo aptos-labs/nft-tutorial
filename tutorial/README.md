@@ -453,11 +453,4 @@ parameter.
 
 Read more about phantom type parameters <a href="https://move-language.github.io/move/generics.html#phantom-type-parameters">here</a>.
 </details>
-
-## Advanced steps
-
-Before moving on to the next steps, let's make sure you have all the prover dependencies installed.
-
-Try running `boogie /version `. If an error message shows up saying "command not found: boogie", you will have to install the Move Prover
-first: https://aptos.dev/cli-tools/install-move-prover/.
-
+    
